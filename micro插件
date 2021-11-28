@@ -1,0 +1,4 @@
+micro 环境搭建需要安装2个插件
+protoc-gen-go和protoc-gen-micro
+
+protoc --proto_path=. --go_out=. --micro_out=. srv.proto

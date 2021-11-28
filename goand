@@ -1,0 +1,3 @@
+cd /usr/local/GoLand-2021.2.4/bin
+sudo ./goland.sh 
+

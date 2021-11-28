@@ -1,0 +1,2 @@
+sudo chmod a+rw /var/run/docker.sock
+

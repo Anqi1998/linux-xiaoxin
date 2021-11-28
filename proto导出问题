@@ -1,0 +1,10 @@
+protoc导出时遇到protoc-gen-go unable to determine Go import path解决方法
+
+
+在.proto文件添加一行代码
+option go_package ="../proto1";  //proto1为脚本文件所在文件夹
+
+proto 编译命令
+protoc --go_out=./  *.proto
+protoc --go_out=plugins=grpc:./  *.proto  带插件的编译
+protoc --proto_path=. --go_out=. --micro_out=. *.proto  适用于micro的编译
